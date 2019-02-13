@@ -29,6 +29,7 @@ contract EmployeeBaxTimeLock is Owned {
 
 	constructor(address _erc20address, uint _timeRangeForWithdraw) public {
 		require(_erc20address != address(0));
+		require(_timeRangeForWithdraw > 0);
 		timeRangeForWithdraw = _timeRangeForWithdraw;
 		erc20address = _erc20address;
 	}
