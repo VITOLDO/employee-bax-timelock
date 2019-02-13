@@ -1,0 +1,10 @@
+######################
+# Intellij
+######################
+.idea/
+
+## Build generated
+build/
+
+## Node JS
+node_modules/
